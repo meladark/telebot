@@ -1,0 +1,6 @@
+codecov
+coverage
+pycodestyle
+pylint
+python-telegram-bot
+radon

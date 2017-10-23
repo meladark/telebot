@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.5"
+  - "3.6"
+install:
+  - pip install -r requirements.txt
+script:
+  - set -e
+  - ./setup.py check
+  - ./setup.py style
+  - coverage run setup.py test
+after_success:
+  - codecov
